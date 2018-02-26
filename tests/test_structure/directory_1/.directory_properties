@@ -1,0 +1,22 @@
+{
+  "display_name": "Directory",
+  "owner": "",
+  "view_directory": [
+    ""
+  ],
+  "view_files": [
+    ""
+  ],
+  "read": [
+    ""
+  ],
+  "write": [
+    ""
+  ],
+  "delete": [
+    ""
+  ],
+  "share": [
+    ""
+  ]
+}

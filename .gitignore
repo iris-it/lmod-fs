@@ -1,0 +1,10 @@
+vendor
+tests/temp
+composer.lock
+
+/node_modules
+/storage/*.key
+/.idea
+npm-debug.log
+yarn-error.log
+.env

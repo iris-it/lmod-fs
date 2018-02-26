@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "extension": "png",
+      "size": 65500,
+      "type": "file",
+      "path": "directory_1\/file.png",
+      "timestamp": 1519214090,
+      "dirname": "directory_1",
+      "basename": "file.png",
+      "filename": "file"
+    },
+    {
+      "extension": "pptx",
+      "size": 0,
+      "type": "file",
+      "path": "directory_1\/file.pptx",
+      "timestamp": 1519214090,
+      "dirname": "directory_1",
+      "basename": "file.pptx",
+      "filename": "file"
+    }
+  ]
+}

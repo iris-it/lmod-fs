@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "type": "dir",
+      "path": "directory_1",
+      "timestamp": 1519214090,
+      "dirname": "",
+      "basename": "directory_1",
+      "filename": "directory_1",
+      "nodes": [
+        {
+          "extension": "png",
+          "size": 65500,
+          "type": "file",
+          "path": "directory_1\/file.png",
+          "timestamp": 1519214090,
+          "dirname": "directory_1",
+          "basename": "file.png",
+          "filename": "file"
+        },
+        {
+          "extension": "pptx",
+          "size": 0,
+          "type": "file",
+          "path": "directory_1\/file.pptx",
+          "timestamp": 1519214090,
+          "dirname": "directory_1",
+          "basename": "file.pptx",
+          "filename": "file"
+        },
+        {
+          "type": "dir",
+          "path": "directory_1\/sub_directory_1",
+          "timestamp": 1519214090,
+          "dirname": "directory_1",
+          "basename": "sub_directory_1",
+          "filename": "sub_directory_1",
+          "nodes": [
+            {
+              "extension": "doc",
+              "size": 0,
+              "type": "file",
+              "path": "directory_1\/sub_directory_1\/file.doc",
+              "timestamp": 1519214090,
+              "dirname": "directory_1\/sub_directory_1",
+              "basename": "file.doc",
+              "filename": "file"
+            },
+            {
+              "extension": "jpg",
+              "size": 20265,
+              "type": "file",
+              "path": "directory_1\/sub_directory_1\/file.jpg",
+              "timestamp": 1519214090,
+              "dirname": "directory_1\/sub_directory_1",
+              "basename": "file.jpg",
+              "filename": "file"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "path": "directory_1\/sub_directory_2",
+          "timestamp": 1519214090,
+          "dirname": "directory_1",
+          "basename": "sub_directory_2",
+          "filename": "sub_directory_2",
+          "nodes": [
+            {
+              "extension": "pdf",
+              "size": 0,
+              "type": "file",
+              "path": "directory_1\/sub_directory_2\/file.pdf",
+              "timestamp": 1519214090,
+              "dirname": "directory_1\/sub_directory_2",
+              "basename": "file.pdf",
+              "filename": "file"
+            },
+            {
+              "extension": "ppt",
+              "size": 0,
+              "type": "file",
+              "path": "directory_1\/sub_directory_2\/file.ppt",
+              "timestamp": 1519214090,
+              "dirname": "directory_1\/sub_directory_2",
+              "basename": "file.ppt",
+              "filename": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "path": "directory_2",
+      "timestamp": 1519214090,
+      "dirname": "",
+      "basename": "directory_2",
+      "filename": "directory_2",
+      "nodes": [
+        {
+          "type": "dir",
+          "path": "directory_2\/sub_directory_3",
+          "timestamp": 1519214090,
+          "dirname": "directory_2",
+          "basename": "sub_directory_3",
+          "filename": "sub_directory_3",
+          "nodes": [
+            {
+              "type": "dir",
+              "path": "directory_2\/sub_directory_3\/sub_directory_4",
+              "timestamp": 1519214090,
+              "dirname": "directory_2\/sub_directory_3",
+              "basename": "sub_directory_4",
+              "filename": "sub_directory_4",
+              "nodes": [
+                {
+                  "type": "dir",
+                  "path": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5",
+                  "timestamp": 1519214090,
+                  "dirname": "directory_2\/sub_directory_3\/sub_directory_4",
+                  "basename": "sub_directory_5",
+                  "filename": "sub_directory_5",
+                  "nodes": [
+                    {
+                      "extension": "doc",
+                      "size": 0,
+                      "type": "file",
+                      "path": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5\/file.doc",
+                      "timestamp": 1519214090,
+                      "dirname": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5",
+                      "basename": "file.doc",
+                      "filename": "file"
+                    },
+                    {
+                      "extension": "txt",
+                      "size": 3425,
+                      "type": "file",
+                      "path": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5\/file.txt",
+                      "timestamp": 1519214090,
+                      "dirname": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5",
+                      "basename": "file.txt",
+                      "filename": "file"
+                    },
+                    {
+                      "extension": "xls",
+                      "size": 0,
+                      "type": "file",
+                      "path": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5\/file.xls",
+                      "timestamp": 1519214090,
+                      "dirname": "directory_2\/sub_directory_3\/sub_directory_4\/sub_directory_5",
+                      "basename": "file.xls",
+                      "filename": "file"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "path": "directory_3",
+      "timestamp": 1519214090,
+      "dirname": "",
+      "basename": "directory_3",
+      "filename": "directory_3",
+      "nodes": [
+        {
+          "extension": "gif",
+          "size": 127751,
+          "type": "file",
+          "path": "directory_3\/file.gif",
+          "timestamp": 1519214090,
+          "dirname": "directory_3",
+          "basename": "file.gif",
+          "filename": "file"
+        },
+        {
+          "extension": "jpg",
+          "size": 20265,
+          "type": "file",
+          "path": "directory_3\/file.jpg",
+          "timestamp": 1519214090,
+          "dirname": "directory_3",
+          "basename": "file.jpg",
+          "filename": "file"
+        }
+      ]
+    }
+  ]
+}

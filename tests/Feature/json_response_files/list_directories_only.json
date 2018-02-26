@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "type": "dir",
+      "path": "directory_1\/sub_directory_1",
+      "timestamp": 1519214090,
+      "dirname": "directory_1",
+      "basename": "sub_directory_1",
+      "filename": "sub_directory_1"
+    },
+    {
+      "type": "dir",
+      "path": "directory_1\/sub_directory_2",
+      "timestamp": 1519214090,
+      "dirname": "directory_1",
+      "basename": "sub_directory_2",
+      "filename": "sub_directory_2"
+    }
+  ]
+}

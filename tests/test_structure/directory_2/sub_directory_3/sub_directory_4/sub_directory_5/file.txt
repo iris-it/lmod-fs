@@ -1,0 +1,80 @@
+1. Write a Java class that will become the web service
+For example here's UsernameService.java:
+
+package org.greenstone;
+
+public class UsernameService {
+	public String getUsername() { return "pinky"; }
+}
+
+Compile it. (Say in Eclipse.)
+
+2. Copy the *.class file into $GSDLHOME/web/WEB-INF/classes/<correct package structure>. 
+In our example you would copy UsernameService.class into $GSDLHOME/web/WEB-INF/classes/org.greenstone/
+
+
+3. Once you have deployed localsite (or other site) in Greenstone3 using
+> ant deploy-localsite,
+the file $GSDLHOME/web/WEB-INF/server-config.wsdd would have been generated.
+It would contain one or more <service> elements.
+
+Stop greenstone's tomcat:
+> ant stop
+
+Copy an existing <service> element in order to create a <service> element for your web service.
+In our example case, you could have:
+<service name="UsernameService" provider="java:RPC">
+  <parameter name="allowedMethods" value="getUsername"/>
+  <parameter name="className" value="org.greenstone.UsernameService"/>
+ </service>
+NOTES: 
+- Set the service's provider attribute to "java:RPC"
+- The serviceName is what you want appearing in the wsdl file (it need not be the same as the class name)
+- the className value is your web service Java class with full-package structure.
+- set the parameter allowedMethods to either the single method to be exposed, or if there is a list of them, then set the value to a comma-separated list of method names, or if you want ALL the class' public methods exposed, put a * for the value. See example below:
+ <service name="MyWebServices" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="org.greenstone.WebServices"/>
+ </service>
+
+
+4. We now need to deploy the web service.
+Start tomcat:
+> ant start
+
+And now use Axis' AdminClient tool to deploy the web service by typing the following in the x-term from within the GSDLHOME folder:
+
+> java -cp $AXISCLASSPATH org.apache.axis.client.AdminClient -lhttp://YOURCOMPUTER:YOURPORT/greenstone3/services/AdminService web/WEB-INF/server-config.wsdd
+
+Change computer host and port to suite your situation:
+e.g. java -cp $AXISCLASSPATH org.apache.axis.client.AdminClient -lhttp://harakeke:8080/greenstone3/services/AdminService web/WEB-INF/server-config.wsdd
+
+Check it says DONE PROCESSING or something like it.
+
+5. Stop Tomcat and restart it again.
+In a browser go to the "services" page of the Greenstone 3:
+http://localhost:8080/greenstone3/services
+and find the new service there. There will be a link to its WSDL file as well.
+
+
+Troubleshooting:
+Tried to run axis AdminClient on the server-config.wsdd (service descriptor) file and got an AxisFault Exception?
+-> have to run tomcat (ant start) before running AdminClient.
+
+
+-----------------------
+server-config.wsdd can have the following kind of <service> element too (code from Xiao-Feng):
+
+
+<service name="FlaxWebService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlPortType" value="FlaxWebService"/>
+  <parameter name="scope" value="Session"/>
+  <parameter name="className"
+value="org.flax.webservice.FlaxWebServiceSoapBindingSkeleton"/>
+  <parameter name="wsdlServicePort" value="FlaxWebService"/>
+  <parameter name="wsdlTargetNamespace" value="urn:flax"/>
+  <parameter name="wsdlServiceElement" value="FlaxWebServiceService"/>
+ </service>
+
